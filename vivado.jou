@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Nov  7 11:45:00 2023
+# Process ID: 6148
+# Current directory: /home/ubuntu/123123/lab-caravel_fir
+# Command line: vivado
+# Log file: /home/ubuntu/123123/lab-caravel_fir/vivado.log
+# Journal file: /home/ubuntu/123123/lab-caravel_fir/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2295.688 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+set_property target_constrs_file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.srcs/constrs_1/new/constraint_1.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_4 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_5 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_6 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_7 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1

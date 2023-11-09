@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Nov  7 11:45:00 2023
+# Process ID: 6148
+# Current directory: /home/ubuntu/123123/lab-caravel_fir
+# Command line: vivado
+# Log file: /home/ubuntu/123123/lab-caravel_fir/vivado.log
+# Journal file: /home/ubuntu/123123/lab-caravel_fir/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2295.688 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from '/home/ubuntu/lab-caravel_fir/project_1' since last save.
+INFO: [filemgmt 56-2] Default IP Output Path : Could not find the directory '/home/ubuntu/123123/lab-caravel_fir/project_1/project_1.gen/sources_1', nor could it be found using path '/home/ubuntu/lab-caravel_fir/project_1/project_1.gen/sources_1'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory '/home/ubuntu/123123/lab-caravel_fir/project_1/project_1.ip_user_files', nor could it be found using path '/home/ubuntu/lab-caravel_fir/project_1/project_1.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 7579.207 ; gain = 78.047 ; free physical = 4067 ; free virtual = 8711
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.srcs/utils_1/imports/synth_1/user_proj_example.dcp with file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/user_proj_example.dcp
+launch_runs synth_1 -jobs 2
+[Tue Nov  7 11:46:13 2023] Launched synth_1...
+Run output will be captured here: /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7605.230 ; gain = 0.000 ; free physical = 3832 ; free virtual = 8572
+INFO: [Netlist 29-17] Analyzing 95 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ubuntu/123123/lab-caravel_fir/project_1/project_1.srcs/constrs_1/new/constraint_1.xdc]
+Finished Parsing XDC File [/home/ubuntu/123123/lab-caravel_fir/project_1/project_1.srcs/constrs_1/new/constraint_1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7605.230 ; gain = 0.000 ; free physical = 3729 ; free virtual = 8469
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 7623.223 ; gain = 17.992 ; free physical = 3632 ; free virtual = 8376
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+set_property target_constrs_file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.srcs/constrs_1/new/constraint_1.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.srcs/utils_1/imports/synth_1/user_proj_example.dcp with file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/user_proj_example.dcp
+launch_runs synth_1 -jobs 2
+[Tue Nov  7 11:53:09 2023] Launched synth_1...
+Run output will be captured here: /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints -force
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.srcs/utils_1/imports/synth_1/user_proj_example.dcp with file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/user_proj_example.dcp
+launch_runs synth_1 -jobs 2
+[Tue Nov  7 11:55:20 2023] Launched synth_1...
+Run output will be captured here: /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints -force
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.srcs/utils_1/imports/synth_1/user_proj_example.dcp with file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/user_proj_example.dcp
+launch_runs synth_1 -jobs 2
+[Tue Nov  7 11:57:03 2023] Launched synth_1...
+Run output will be captured here: /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_4 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints -force
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.srcs/utils_1/imports/synth_1/user_proj_example.dcp with file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/user_proj_example.dcp
+launch_runs synth_1 -jobs 2
+[Tue Nov  7 12:00:12 2023] Launched synth_1...
+Run output will be captured here: /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_5 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints -force
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.srcs/utils_1/imports/synth_1/user_proj_example.dcp with file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/user_proj_example.dcp
+launch_runs synth_1 -jobs 2
+[Tue Nov  7 12:02:00 2023] Launched synth_1...
+Run output will be captured here: /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_6 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints -force
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.srcs/utils_1/imports/synth_1/user_proj_example.dcp with file /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/user_proj_example.dcp
+launch_runs synth_1 -jobs 2
+[Tue Nov  7 12:03:58 2023] Launched synth_1...
+Run output will be captured here: /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_7 -file /home/ubuntu/123123/lab-caravel_fir/project_1/timing_report.txt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_runs impl_1 -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Nov  7 12:07:02 2023] Launched impl_1...
+Run output will be captured here: /home/ubuntu/123123/lab-caravel_fir/project_1/project_1.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  7 12:09:56 2023...
